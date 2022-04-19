@@ -144,7 +144,14 @@ ol {
 }
 
 .header-link {
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
+}
+
+.header-link .icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-nav-link:hover,
@@ -153,6 +160,11 @@ ol {
 .header-link:focus,
 .active {
   color: var(--accent-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  fill: var(--accent-color);
 }
 
 .underline {
@@ -229,12 +241,17 @@ ol {
   margin-right: 0px;
 }
 
-.benefits-icon {
+.benefits-icon-wrap {
   background-color: var(--secondary-back-color);
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .benefits-subtitle {
@@ -320,7 +337,7 @@ color: var(--primary-text-color);
 }
 
 .team-wrap {
-  padding: 30px 0 16px 0;
+  padding: 30px 0;
 }
 
 .team-subtitle {
@@ -335,6 +352,7 @@ color: var(--primary-text-color);
 }
 
 .team-desc {
+  margin-bottom: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
@@ -347,25 +365,36 @@ color: var(--primary-text-color);
   justify-content: center;
 } 
 
-.team-socials-item {
-  display: block;
-}
-
 .team-socials-item + .team-socials-item {
   margin-left: 10px;
 }
 
 .team-socials-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ff8954;
+  cursor: pointer;
+  color: #afb1b8;
+}
+
+.team-socials-link:hover {
+  background-color: #2196F3;
+  color: #fff;
 }
   
 .team-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
+}
+
+
+
+.icon-instagram {
+
 }
 
 /* --------------PORTFOLIO--------------*/
